@@ -1,0 +1,84 @@
+.container {
+  background: #000;
+  padding: 20px 5%;
+  position: fixed;
+  width: 100%;
+  left: 0;
+}
+
+.top,
+.navLinks,
+.profile,
+.navRight {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navTitle {
+  position: relative;
+  width: 91px;
+  height: 31px;
+  object-fit: cover;
+  cursor: pointer;
+  filter: brightness(0) invert(1);
+}
+
+.navLinks {
+  color: white;
+}
+
+.navLink {
+  margin: 0 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+
+.navLink::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background: white;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.3s ease;
+}
+
+.navLink:hover {
+  color: rgb(192, 192, 192);
+}
+
+.navLink:hover::after {
+  width: 10%;
+}
+
+.navRight {
+  color: white;
+}
+
+.navRight > span {
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.navBtn {
+  margin: 0 20px;
+  background: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+}
+
+.langIcon {
+  color: white;
+  font-size: 1.3rem;
+}
+
+.profile {
+  position: relative;
+}
